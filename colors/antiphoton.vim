@@ -54,8 +54,8 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Folded ctermbg=253 ctermfg=242 cterm=NONE guibg=#dadada guifg=#6c6c6c gui=NONE
     hi FoldColumn ctermbg=NONE ctermfg=166 cterm=NONE guibg=NONE guifg=#d75f00 gui=NONE
     hi SpecialKey ctermbg=NONE ctermfg=242 cterm=NONE guibg=NONE guifg=#6c6c6c gui=NONE
-    hi IncSearch ctermbg=203 ctermfg=231 cterm=NONE guibg=#d75f5f guifg=#ffffff gui=NONE
-    hi Search ctermbg=134 ctermfg=231 cterm=NONE guibg=#55b4d4 guifg=#ffffff gui=NONE
+    hi IncSearch ctermbg=246 ctermfg=231 cterm=NONE guibg=#fffa00 guifg=#ffffff gui=NONE
+    hi Search ctermbg=246 ctermfg=231 cterm=NONE guibg=#fffa00 guifg=#ffffff gui=NONE
     hi Directory ctermbg=NONE ctermfg=134 cterm=NONE guibg=NONE guifg=#af5fd7 gui=NONE
     hi MatchParen ctermbg=NONE ctermfg=203 cterm=bold guibg=NONE guifg=#d75f5f gui=bold
     hi SpellBad ctermbg=NONE ctermfg=124 cterm=underline guibg=NONE guifg=#af0000 gui=underline
@@ -112,8 +112,8 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi Folded ctermbg=grey ctermfg=darkgray cterm=NONE
     hi FoldColumn ctermbg=NONE ctermfg=darkyellow cterm=NONE
     hi SpecialKey ctermbg=NONE ctermfg=darkgray cterm=NONE
-    hi IncSearch ctermbg=red ctermfg=white cterm=NONE
-    hi Search ctermbg=cyan ctermfg=white cterm=NONE
+    hi IncSearch ctermbg=yellow ctermfg=white cterm=NONE
+    hi Search ctermbg=yellow ctermfg=white cterm=NONE
     hi Directory ctermbg=NONE ctermfg=darkmagenta cterm=NONE
     hi MatchParen ctermbg=NONE ctermfg=red cterm=bold
     hi SpellBad ctermbg=NONE ctermfg=darkred cterm=underline
