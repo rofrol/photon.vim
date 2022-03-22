@@ -46,6 +46,8 @@
     fgl_2 = ["#4e4e4e", 239, "darkgrey"]
 
     # Accents
+    aqua = ["#c1ddff", 134, "aqua"]
+    cyan = ["#55b4d4", 134, "cyan"]
     purple = ["#af5fd7", 134, "darkmagenta"]
     orange = ["#d75f5f", 203, "red"]
     grey = ["#6c6c6c", 242, "darkgray"]
@@ -91,17 +93,17 @@
         [ "Comment", "bg", bgd_4, "NONE" ],
         [ "Conceal", "bg", grey, "NONE" ],
 
-        [ "Constant", "bg", purple, "NONE" ],
+        [ "Constant", "bg", fg, "NONE" ],
         [ "Character", "Constant" ],
         [ "Number", "Constant" ],
         [ "Float", "Number" ],
         [ "Boolean", "Constant" ],
-        [ "String", "Constant" ],
+        [ "String", "bg", purple, "NONE" ],
 
         [ "Identifier", "bg", fg, "NONE" ],
         [ "Function", "Identifier" ],
 
-        [ "Statement", "bg", grey, "NONE" ],
+        [ "Statement", "bg", fgl_1, "NONE" ],
         [ "Conditonal", "Statement" ],
         [ "Repeat", "Statement" ],
         [ "Label", "Statement" ],
@@ -110,13 +112,13 @@
 
         [ "Operator", "bg", fg, "NONE" ],
 
-        [ "PreProc", "bg", grey, "NONE" ],
+        [ "PreProc", "bg", fgl_1, "NONE" ],
         [ "Include", "PreProc" ],
         [ "Define", "PreProc" ],
         [ "Macro", "PreProc" ],
         [ "PreCondit", "PreProc" ],
 
-        [ "Type", "bg", fg, "NONE" ],
+        [ "Type", "bg", fgl_1, "NONE" ],
         [ "StorageClass", "Type" ],
         [ "Structure", "Type" ],
         [ "Typedef", "Type" ],
@@ -161,8 +163,8 @@
         [ "ColorColumn", "CursorColumn" ],
         [ "SignColumn", "NONE", grey, "NONE" ],
 
-        [ "Visual", bgd_2, "NONE", "NONE" ],
-        [ "VisualNOS", bgd_3, "NONE", "NONE" ],
+        [ "Visual", aqua, "NONE", "NONE" ],
+        [ "VisualNOS", aqua, "NONE", "NONE" ],
 
         [ "Pmenu", bgd_1, grey, "NONE" ],
         [ "PmenuSbar", bgd_2, "NONE", "NONE" ],
@@ -174,7 +176,7 @@
 
         [ "SpecialKey", "NONE", grey, "NONE" ],
         [ "IncSearch", orange, bg, "NONE" ],
-        [ "Search", purple, bg, "NONE" ],
+        [ "Search", cyan, bg, "NONE" ],
         [ "Directory", "NONE", purple, "NONE" ],
         [ "MatchParen", "NONE", orange, "bold" ],
 
@@ -209,7 +211,7 @@
         ["#a2734c"],  # yellow
         ["#12488b"],  # blue
         ["#a347ba"],  # magenta
-        ["#2aa1b3"],  # cyan
+        cyan,         # cyan
         bgd_4,        # white
 
         # Bright

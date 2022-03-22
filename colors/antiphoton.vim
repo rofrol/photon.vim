@@ -3,7 +3,7 @@
 " Webpage:     https://github.com/axvr/photon.vim
 " Description: An elegant, light colour scheme with minimal syntax highlighting
 " Licence:     MIT (2020)
-" Last Change: 2021-08-16
+" Last Change: 2022-03-22
 
 hi clear
 if exists("syntax_on")
@@ -20,12 +20,13 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi NonText ctermbg=bg ctermfg=253 cterm=NONE guibg=bg guifg=#dadada gui=NONE
     hi Comment ctermbg=bg ctermfg=246 cterm=NONE guibg=bg guifg=#949494 gui=NONE
     hi Conceal ctermbg=bg ctermfg=242 cterm=NONE guibg=bg guifg=#6c6c6c gui=NONE
-    hi Constant ctermbg=bg ctermfg=134 cterm=NONE guibg=bg guifg=#af5fd7 gui=NONE
+    hi Constant ctermbg=bg ctermfg=233 cterm=NONE guibg=bg guifg=#121212 gui=NONE
+    hi String ctermbg=bg ctermfg=134 cterm=NONE guibg=bg guifg=#af5fd7 gui=NONE
     hi Identifier ctermbg=bg ctermfg=233 cterm=NONE guibg=bg guifg=#121212 gui=NONE
-    hi Statement ctermbg=bg ctermfg=242 cterm=NONE guibg=bg guifg=#6c6c6c gui=NONE
+    hi Statement ctermbg=bg ctermfg=236 cterm=NONE guibg=bg guifg=#303030 gui=NONE
     hi Operator ctermbg=bg ctermfg=233 cterm=NONE guibg=bg guifg=#121212 gui=NONE
-    hi PreProc ctermbg=bg ctermfg=242 cterm=NONE guibg=bg guifg=#6c6c6c gui=NONE
-    hi Type ctermbg=bg ctermfg=233 cterm=NONE guibg=bg guifg=#121212 gui=NONE
+    hi PreProc ctermbg=bg ctermfg=236 cterm=NONE guibg=bg guifg=#303030 gui=NONE
+    hi Type ctermbg=bg ctermfg=236 cterm=NONE guibg=bg guifg=#303030 gui=NONE
     hi Special ctermbg=NONE ctermfg=242 cterm=NONE guibg=NONE guifg=#6c6c6c gui=NONE
     hi Error ctermbg=NONE ctermfg=124 cterm=NONE guibg=NONE guifg=#af0000 gui=NONE
     hi Warning ctermbg=NONE ctermfg=166 cterm=NONE guibg=NONE guifg=#d75f00 gui=NONE
@@ -44,8 +45,8 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Cursor ctermbg=134 ctermfg=233 cterm=NONE guibg=#af5fd7 guifg=#121212 gui=NONE
     hi CursorLine ctermbg=255 ctermfg=NONE cterm=NONE guibg=#eeeeee guifg=NONE gui=NONE
     hi SignColumn ctermbg=NONE ctermfg=242 cterm=NONE guibg=NONE guifg=#6c6c6c gui=NONE
-    hi Visual ctermbg=254 ctermfg=NONE cterm=NONE guibg=#e4e4e4 guifg=NONE gui=NONE
-    hi VisualNOS ctermbg=253 ctermfg=NONE cterm=NONE guibg=#dadada guifg=NONE gui=NONE
+    hi Visual ctermbg=134 ctermfg=NONE cterm=NONE guibg=#c1ddff guifg=NONE gui=NONE
+    hi VisualNOS ctermbg=134 ctermfg=NONE cterm=NONE guibg=#c1ddff guifg=NONE gui=NONE
     hi Pmenu ctermbg=255 ctermfg=242 cterm=NONE guibg=#eeeeee guifg=#6c6c6c gui=NONE
     hi PmenuSbar ctermbg=254 ctermfg=NONE cterm=NONE guibg=#e4e4e4 guifg=NONE gui=NONE
     hi PmenuSel ctermbg=254 ctermfg=134 cterm=bold guibg=#e4e4e4 guifg=#af5fd7 gui=bold
@@ -54,7 +55,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi FoldColumn ctermbg=NONE ctermfg=166 cterm=NONE guibg=NONE guifg=#d75f00 gui=NONE
     hi SpecialKey ctermbg=NONE ctermfg=242 cterm=NONE guibg=NONE guifg=#6c6c6c gui=NONE
     hi IncSearch ctermbg=203 ctermfg=231 cterm=NONE guibg=#d75f5f guifg=#ffffff gui=NONE
-    hi Search ctermbg=134 ctermfg=231 cterm=NONE guibg=#af5fd7 guifg=#ffffff gui=NONE
+    hi Search ctermbg=134 ctermfg=231 cterm=NONE guibg=#55b4d4 guifg=#ffffff gui=NONE
     hi Directory ctermbg=NONE ctermfg=134 cterm=NONE guibg=NONE guifg=#af5fd7 gui=NONE
     hi MatchParen ctermbg=NONE ctermfg=203 cterm=bold guibg=NONE guifg=#d75f5f gui=bold
     hi SpellBad ctermbg=NONE ctermfg=124 cterm=underline guibg=NONE guifg=#af0000 gui=underline
@@ -77,11 +78,12 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi NonText ctermbg=bg ctermfg=grey cterm=NONE
     hi Comment ctermbg=bg ctermfg=gray cterm=NONE
     hi Conceal ctermbg=bg ctermfg=darkgray cterm=NONE
-    hi Constant ctermbg=bg ctermfg=darkmagenta cterm=NONE
+    hi Constant ctermbg=bg ctermfg=black cterm=NONE
+    hi String ctermbg=bg ctermfg=darkmagenta cterm=NONE
     hi Identifier ctermbg=bg ctermfg=black cterm=NONE
-    hi Statement ctermbg=bg ctermfg=darkgray cterm=NONE
+    hi Statement ctermbg=bg ctermfg=black cterm=NONE
     hi Operator ctermbg=bg ctermfg=black cterm=NONE
-    hi PreProc ctermbg=bg ctermfg=darkgray cterm=NONE
+    hi PreProc ctermbg=bg ctermfg=black cterm=NONE
     hi Type ctermbg=bg ctermfg=black cterm=NONE
     hi Special ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi Error ctermbg=NONE ctermfg=darkred cterm=NONE
@@ -101,8 +103,8 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi Cursor ctermbg=darkmagenta ctermfg=black cterm=NONE
     hi CursorLine ctermbg=white ctermfg=NONE cterm=NONE
     hi SignColumn ctermbg=NONE ctermfg=darkgray cterm=NONE
-    hi Visual ctermbg=white ctermfg=NONE cterm=NONE
-    hi VisualNOS ctermbg=grey ctermfg=NONE cterm=NONE
+    hi Visual ctermbg=aqua ctermfg=NONE cterm=NONE
+    hi VisualNOS ctermbg=aqua ctermfg=NONE cterm=NONE
     hi Pmenu ctermbg=white ctermfg=darkgray cterm=NONE
     hi PmenuSbar ctermbg=white ctermfg=NONE cterm=NONE
     hi PmenuSel ctermbg=white ctermfg=darkmagenta cterm=bold
@@ -111,7 +113,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi FoldColumn ctermbg=NONE ctermfg=darkyellow cterm=NONE
     hi SpecialKey ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi IncSearch ctermbg=red ctermfg=white cterm=NONE
-    hi Search ctermbg=darkmagenta ctermfg=white cterm=NONE
+    hi Search ctermbg=cyan ctermfg=white cterm=NONE
     hi Directory ctermbg=NONE ctermfg=darkmagenta cterm=NONE
     hi MatchParen ctermbg=NONE ctermfg=red cterm=bold
     hi SpellBad ctermbg=NONE ctermfg=darkred cterm=underline
@@ -129,7 +131,6 @@ hi! link Character Constant
 hi! link Number Constant
 hi! link Float Number
 hi! link Boolean Constant
-hi! link String Constant
 hi! link Function Identifier
 hi! link Conditonal Statement
 hi! link Repeat Statement
@@ -172,7 +173,7 @@ if has('nvim')
     let g:terminal_color_3 = '#a2734c'
     let g:terminal_color_4 = '#12488b'
     let g:terminal_color_5 = '#a347ba'
-    let g:terminal_color_6 = '#2aa1b3'
+    let g:terminal_color_6 = '#55b4d4'
     let g:terminal_color_7 = '#949494'
     let g:terminal_color_8 = '#4e4e4e'
     let g:terminal_color_9 = '#d75f5f'
@@ -190,7 +191,7 @@ else
             \ '#a2734c',
             \ '#12488b',
             \ '#a347ba',
-            \ '#2aa1b3',
+            \ '#55b4d4',
             \ '#949494',
             \ '#4e4e4e',
             \ '#d75f5f',
