@@ -30,15 +30,13 @@
     # properly set up terminal emulator.
 
     # Background
-    bg = ["#ffffff", 231, "white"]
+    bg = ["#ffffff", 255, "white"]
 
     # Darker background shades
     bgd_1 = ["#eeeeee", 255, "white"]
     bgd_2 = ["#e4e4e4", 254, "white"]
     bgd_3 = ["#dadada", 253, "grey"]
     bgd_4 = ["#949494", 246, "gray"]
-
-    bgd_yellow = ["#fffa00", 246, "yellow"]
 
     # Foreground
     fg = ["#121212", 233, "black"]
@@ -55,7 +53,8 @@
     grey = ["#6c6c6c", 242, "darkgray"]
     green = ["#008700", 28, "darkgreen"]
     red = ["#af0000", 124, "darkred"]
-    yellow = ["#d75f00", 166, "darkyellow"]
+    yellow = ["#fffa00", 166, "yellow"]
+    darkyellow = ["#d75f00", 166, "darkyellow"]
 
     # Highlights:
     #
@@ -91,36 +90,36 @@
 
     highlights = [
         [ "Normal", bg, fg, "NONE" ],
-        [ "NonText", "bg", bgd_3, "NONE" ],
-        [ "Comment", "bg", bgd_4, "NONE" ],
-        [ "Conceal", "bg", grey, "NONE" ],
+        [ "NonText", "NONE", bgd_3, "NONE" ],
+        [ "Comment", "NONE", bgd_4, "NONE" ],
+        [ "Conceal", "NONE", grey, "NONE" ],
 
-        [ "Constant", "bg", fg, "NONE" ],
+        [ "Constant", "NONE", fg, "NONE" ],
         [ "Character", "Constant" ],
         [ "Number", "Constant" ],
         [ "Float", "Number" ],
         [ "Boolean", "Constant" ],
-        [ "String", "bg", purple, "NONE" ],
+        [ "String", "NONE", purple, "NONE" ],
 
-        [ "Identifier", "bg", fg, "NONE" ],
+        [ "Identifier", "NONE", fg, "NONE" ],
         [ "Function", "Identifier" ],
 
-        [ "Statement", "bg", fgl_1, "NONE" ],
+        [ "Statement", "NONE", fgl_1, "NONE" ],
         [ "Conditonal", "Statement" ],
         [ "Repeat", "Statement" ],
         [ "Label", "Statement" ],
         [ "Keyword", "Statement" ],
         [ "Exception", "Statement" ],
 
-        [ "Operator", "bg", fg, "NONE" ],
+        [ "Operator", "NONE", fg, "NONE" ],
 
-        [ "PreProc", "bg", fgl_1, "NONE" ],
+        [ "PreProc", "NONE", fgl_1, "NONE" ],
         [ "Include", "PreProc" ],
         [ "Define", "PreProc" ],
         [ "Macro", "PreProc" ],
         [ "PreCondit", "PreProc" ],
 
-        [ "Type", "bg", fgl_1, "NONE" ],
+        [ "Type", "NONE", fgl_1, "NONE" ],
         [ "StorageClass", "Type" ],
         [ "Structure", "Type" ],
         [ "Typedef", "Type" ],
@@ -134,7 +133,7 @@
 
         [ "Error", "NONE", red, "NONE" ],
         [ "ErrorMsg", "Error" ],
-        [ "Warning", "NONE", yellow, "NONE" ],
+        [ "Warning", "NONE", darkyellow, "NONE" ],
         [ "WarningMsg", "Warning" ],
 
         [ "ModeMsg", "NONE", grey, "NONE" ],
@@ -165,8 +164,8 @@
         [ "ColorColumn", "CursorColumn" ],
         [ "SignColumn", "NONE", grey, "NONE" ],
 
-        [ "Visual", aqua, "NONE", "NONE" ],
-        [ "VisualNOS", aqua, "NONE", "NONE" ],
+        [ "Visual", aqua, "fg", "NONE" ],
+        [ "VisualNOS", aqua, "fg", "NONE" ],
 
         [ "Pmenu", bgd_1, grey, "NONE" ],
         [ "PmenuSbar", bgd_2, "NONE", "NONE" ],
@@ -177,8 +176,8 @@
         [ "FoldColumn", "NONE", yellow, "NONE" ],
 
         [ "SpecialKey", "NONE", grey, "NONE" ],
-        [ "IncSearch", bgd_yellow, bg, "NONE" ],
-        [ "Search", bgd_yellow, bg, "NONE" ],
+        [ "IncSearch", yellow, fg, "NONE" ],
+        [ "Search", yellow, fg, "NONE" ],
         [ "Directory", "NONE", purple, "NONE" ],
         [ "MatchParen", "NONE", orange, "bold" ],
 
@@ -196,7 +195,7 @@
         [ "diffAdded", "DiffAdd" ],
         [ "diffRemoved", "DiffDelete" ],
 
-        [ "helpHyperTextJump", "bg", purple, "NONE" ],
+        [ "helpHyperTextJump", "NONE", purple, "NONE" ],
         [ "htmlTag", "htmlTagName" ],
         [ "htmlEndTag", "htmlTag" ],
         [ "gitcommitSummary", "Title" ]
