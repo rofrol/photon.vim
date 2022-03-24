@@ -3,7 +3,7 @@
 " Webpage:     https://github.com/axvr/photon.vim
 " Description: An elegant, light colour scheme with minimal syntax highlighting
 " Licence:     MIT (2020)
-" Last Change: 2022-03-23
+" Last Change: 2022-03-24
 
 hi clear
 if exists("syntax_on")
@@ -21,7 +21,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Comment ctermbg=NONE ctermfg=246 cterm=NONE guibg=NONE guifg=#949494 gui=NONE
     hi Conceal ctermbg=NONE ctermfg=242 cterm=NONE guibg=NONE guifg=#6c6c6c gui=NONE
     hi Constant ctermbg=NONE ctermfg=233 cterm=NONE guibg=NONE guifg=#121212 gui=NONE
-    hi String ctermbg=NONE ctermfg=134 cterm=NONE guibg=NONE guifg=#af5fd7 gui=NONE
+    hi String ctermbg=NONE ctermfg=28 cterm=NONE guibg=NONE guifg=#008000 gui=NONE
     hi Identifier ctermbg=NONE ctermfg=233 cterm=NONE guibg=NONE guifg=#121212 gui=NONE
     hi Statement ctermbg=NONE ctermfg=236 cterm=NONE guibg=NONE guifg=#303030 gui=NONE
     hi Operator ctermbg=NONE ctermfg=233 cterm=NONE guibg=NONE guifg=#121212 gui=NONE
@@ -56,13 +56,13 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi SpecialKey ctermbg=NONE ctermfg=242 cterm=NONE guibg=NONE guifg=#6c6c6c gui=NONE
     hi IncSearch ctermbg=166 ctermfg=233 cterm=NONE guibg=#fffa00 guifg=#121212 gui=NONE
     hi Search ctermbg=166 ctermfg=233 cterm=NONE guibg=#fffa00 guifg=#121212 gui=NONE
-    hi Directory ctermbg=NONE ctermfg=134 cterm=NONE guibg=NONE guifg=#af5fd7 gui=NONE
+    hi Directory ctermbg=NONE ctermfg=28 cterm=NONE guibg=NONE guifg=#0225c7 gui=NONE
     hi MatchParen ctermbg=NONE ctermfg=203 cterm=bold guibg=NONE guifg=#d75f5f gui=bold
     hi SpellBad ctermbg=NONE ctermfg=124 cterm=underline guibg=NONE guifg=#af0000 gui=underline
-    hi SpellCap ctermbg=NONE ctermfg=28 cterm=underline guibg=NONE guifg=#008700 gui=underline
+    hi SpellCap ctermbg=NONE ctermfg=28 cterm=underline guibg=NONE guifg=#008000 gui=underline
     hi SpellLocal ctermbg=NONE ctermfg=166 cterm=underline guibg=NONE guifg=#fffa00 gui=underline
     hi QuickFixLine ctermbg=253 ctermfg=NONE cterm=NONE guibg=#dadada guifg=NONE gui=NONE
-    hi DiffAdd ctermbg=255 ctermfg=28 cterm=NONE guibg=#eeeeee guifg=#008700 gui=NONE
+    hi DiffAdd ctermbg=255 ctermfg=28 cterm=NONE guibg=#eeeeee guifg=#008000 gui=NONE
     hi DiffChange ctermbg=255 ctermfg=NONE cterm=NONE guibg=#eeeeee guifg=NONE gui=NONE
     hi DiffDelete ctermbg=255 ctermfg=124 cterm=NONE guibg=#eeeeee guifg=#af0000 gui=NONE
     hi DiffText ctermbg=255 ctermfg=166 cterm=NONE guibg=#eeeeee guifg=#fffa00 gui=NONE
@@ -79,7 +79,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi Comment ctermbg=NONE ctermfg=gray cterm=NONE
     hi Conceal ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi Constant ctermbg=NONE ctermfg=black cterm=NONE
-    hi String ctermbg=NONE ctermfg=darkmagenta cterm=NONE
+    hi String ctermbg=NONE ctermfg=darkgreen cterm=NONE
     hi Identifier ctermbg=NONE ctermfg=black cterm=NONE
     hi Statement ctermbg=NONE ctermfg=black cterm=NONE
     hi Operator ctermbg=NONE ctermfg=black cterm=NONE
@@ -114,7 +114,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi SpecialKey ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi IncSearch ctermbg=yellow ctermfg=black cterm=NONE
     hi Search ctermbg=yellow ctermfg=black cterm=NONE
-    hi Directory ctermbg=NONE ctermfg=darkmagenta cterm=NONE
+    hi Directory ctermbg=NONE ctermfg=darkblue cterm=NONE
     hi MatchParen ctermbg=NONE ctermfg=red cterm=bold
     hi SpellBad ctermbg=NONE ctermfg=darkred cterm=underline
     hi SpellCap ctermbg=NONE ctermfg=darkgreen cterm=underline
@@ -169,7 +169,7 @@ hi! link gitcommitSummary Title
 if has('nvim')
     let g:terminal_color_0 = '#303030'
     let g:terminal_color_1 = '#af0000'
-    let g:terminal_color_2 = '#008700'
+    let g:terminal_color_2 = '#008000'
     let g:terminal_color_3 = '#a2734c'
     let g:terminal_color_4 = '#12488b'
     let g:terminal_color_5 = '#a347ba'
@@ -187,7 +187,7 @@ else
     let g:terminal_ansi_colors = [
             \ '#303030',
             \ '#af0000',
-            \ '#008700',
+            \ '#008000',
             \ '#a2734c',
             \ '#12488b',
             \ '#a347ba',
