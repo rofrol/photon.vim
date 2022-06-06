@@ -32,7 +32,7 @@
     # Background
     bg = ["#ffffff", 255, "white"]
 
-    # Darker background shades
+    # Background shades
     bgd_1 = ["#eeeeee", 255, "white"]
     bgd_2 = ["#e4e4e4", 254, "white"]
     bgd_3 = ["#dadada", 253, "grey"]
@@ -40,14 +40,16 @@
 
     # Foreground
     fg = ["#121212", 233, "black"]
+    #fg = ["#30383A", 233, "black"]
 
-    # Lighter background shades
+    # Foreground shades
     fgl_1 = ["#303030", 236, "black"]
     fgl_2 = ["#4e4e4e", 239, "darkgrey"]
 
     # Accents
     aqua = ["#c1ddff", 134, "aqua"]
     cyan = ["#55b4d4", 134, "cyan"]
+    magenta = ["#c930c7", 134, "magenta"]
     purple = ["#af5fd7", 134, "darkmagenta"]
     orange = ["#d75f5f", 203, "red"]
     grey = ["#6c6c6c", 242, "darkgray"]
@@ -100,7 +102,7 @@
         [ "Number", "Constant" ],
         [ "Float", "Number" ],
         [ "Boolean", "Constant" ],
-        [ "String", "NONE", green, "NONE" ],
+        [ "String", "NONE", cyan, "NONE" ],
 
         [ "Identifier", "NONE", fg, "NONE" ],
         [ "Function", "Identifier" ],
@@ -222,7 +224,7 @@
         ["#33d17a"],  # green
         yellow,       # yellow
         ["#2a7bde"],  # blue
-        purple,       # magenta
+        magenta,       # magenta
         ["#33c7de"],  # cyan
         bgd_2         # white
     ]

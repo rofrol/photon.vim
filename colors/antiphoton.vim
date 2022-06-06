@@ -3,7 +3,7 @@
 " Webpage:     https://github.com/axvr/photon.vim
 " Description: An elegant, light colour scheme with minimal syntax highlighting
 " Licence:     MIT (2020)
-" Last Change: 2022-03-24
+" Last Change: 2022-06-07
 
 hi clear
 if exists("syntax_on")
@@ -21,7 +21,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Comment ctermbg=NONE ctermfg=246 cterm=NONE guibg=NONE guifg=#949494 gui=NONE
     hi Conceal ctermbg=NONE ctermfg=242 cterm=NONE guibg=NONE guifg=#6c6c6c gui=NONE
     hi Constant ctermbg=NONE ctermfg=233 cterm=NONE guibg=NONE guifg=#121212 gui=NONE
-    hi String ctermbg=NONE ctermfg=28 cterm=NONE guibg=NONE guifg=#008000 gui=NONE
+    hi String ctermbg=NONE ctermfg=134 cterm=NONE guibg=NONE guifg=#55b4d4 gui=NONE
     hi Identifier ctermbg=NONE ctermfg=233 cterm=NONE guibg=NONE guifg=#121212 gui=NONE
     hi Statement ctermbg=NONE ctermfg=236 cterm=NONE guibg=NONE guifg=#303030 gui=NONE
     hi Operator ctermbg=NONE ctermfg=233 cterm=NONE guibg=NONE guifg=#121212 gui=NONE
@@ -79,7 +79,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi Comment ctermbg=NONE ctermfg=gray cterm=NONE
     hi Conceal ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi Constant ctermbg=NONE ctermfg=black cterm=NONE
-    hi String ctermbg=NONE ctermfg=darkgreen cterm=NONE
+    hi String ctermbg=NONE ctermfg=cyan cterm=NONE
     hi Identifier ctermbg=NONE ctermfg=black cterm=NONE
     hi Statement ctermbg=NONE ctermfg=black cterm=NONE
     hi Operator ctermbg=NONE ctermfg=black cterm=NONE
@@ -180,7 +180,7 @@ if has('nvim')
     let g:terminal_color_10 = '#33d17a'
     let g:terminal_color_11 = '#fffa00'
     let g:terminal_color_12 = '#2a7bde'
-    let g:terminal_color_13 = '#af5fd7'
+    let g:terminal_color_13 = '#c930c7'
     let g:terminal_color_14 = '#33c7de'
     let g:terminal_color_15 = '#e4e4e4'
 else
@@ -198,7 +198,7 @@ else
             \ '#33d17a',
             \ '#fffa00',
             \ '#2a7bde',
-            \ '#af5fd7',
+            \ '#c930c7',
             \ '#33c7de',
             \ '#e4e4e4',
             \ ]
