@@ -17,7 +17,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 
     set background=light
 
-    hi NonText ctermbg=NONE ctermfg=253 cterm=NONE guibg=NONE guifg=#dadada gui=NONE
+    hi NonText ctermbg=NONE ctermfg=253 cterm=NONE guibg=NONE guifg=#aaaaaa gui=NONE
     hi Comment ctermbg=NONE ctermfg=246 cterm=NONE guibg=NONE guifg=#949494 gui=NONE
     hi Conceal ctermbg=NONE ctermfg=242 cterm=NONE guibg=NONE guifg=#6c6c6c gui=NONE
     hi Constant ctermbg=NONE ctermfg=233 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
@@ -35,7 +35,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Underlined ctermbg=NONE ctermfg=233 cterm=underline guibg=NONE guifg=#000000 gui=underline
     hi StatusLine ctermbg=254 ctermfg=134 cterm=bold guibg=#e4e4e4 guifg=#af5fd7 gui=bold
     hi StatusLineNC ctermbg=255 ctermfg=242 cterm=NONE guibg=#eeeeee guifg=#6c6c6c gui=NONE
-    hi TabLine ctermbg=253 ctermfg=242 cterm=NONE guibg=#dadada guifg=#6c6c6c gui=NONE
+    hi TabLine ctermbg=253 ctermfg=242 cterm=NONE guibg=#aaaaaa guifg=#6c6c6c gui=NONE
     hi TabLineSel ctermbg=255 ctermfg=134 cterm=bold guibg=#eeeeee guifg=#af5fd7 gui=bold
     hi WildMenu ctermbg=203 ctermfg=255 cterm=NONE guibg=#d75f5f guifg=#ffffff gui=NONE
     hi VertSplit ctermbg=255 ctermfg=255 cterm=NONE guibg=#eeeeee guifg=#eeeeee gui=NONE
@@ -51,7 +51,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi PmenuSbar ctermbg=254 ctermfg=NONE cterm=NONE guibg=#e4e4e4 guifg=NONE gui=NONE
     hi PmenuSel ctermbg=254 ctermfg=134 cterm=bold guibg=#e4e4e4 guifg=#af5fd7 gui=bold
     hi PmenuThumb ctermbg=203 ctermfg=NONE cterm=NONE guibg=#d75f5f guifg=NONE gui=NONE
-    hi Folded ctermbg=253 ctermfg=242 cterm=NONE guibg=#dadada guifg=#6c6c6c gui=NONE
+    hi Folded ctermbg=253 ctermfg=242 cterm=NONE guibg=#aaaaaa guifg=#6c6c6c gui=NONE
     hi FoldColumn ctermbg=NONE ctermfg=166 cterm=NONE guibg=NONE guifg=#fffa00 gui=NONE
     hi SpecialKey ctermbg=NONE ctermfg=242 cterm=NONE guibg=NONE guifg=#6c6c6c gui=NONE
     hi IncSearch ctermbg=166 ctermfg=233 cterm=NONE guibg=#fffa00 guifg=#000000 gui=NONE
@@ -61,7 +61,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi SpellBad ctermbg=NONE ctermfg=124 cterm=underline guibg=NONE guifg=#af0000 gui=underline
     hi SpellCap ctermbg=NONE ctermfg=28 cterm=underline guibg=NONE guifg=#008000 gui=underline
     hi SpellLocal ctermbg=NONE ctermfg=166 cterm=underline guibg=NONE guifg=#fffa00 gui=underline
-    hi QuickFixLine ctermbg=253 ctermfg=NONE cterm=NONE guibg=#dadada guifg=NONE gui=NONE
+    hi QuickFixLine ctermbg=253 ctermfg=NONE cterm=NONE guibg=#aaaaaa guifg=NONE gui=NONE
     hi DiffAdd ctermbg=255 ctermfg=28 cterm=NONE guibg=#eeeeee guifg=#008000 gui=NONE
     hi DiffChange ctermbg=255 ctermfg=NONE cterm=NONE guibg=#eeeeee guifg=NONE gui=NONE
     hi DiffDelete ctermbg=255 ctermfg=124 cterm=NONE guibg=#eeeeee guifg=#af0000 gui=NONE
