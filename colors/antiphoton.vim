@@ -13,18 +13,18 @@ endif
 let colors_name = "antiphoton"
 
 if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
-    hi Normal ctermbg=255 ctermfg=233 cterm=NONE guibg=#ffffff guifg=#121212 gui=NONE
+    hi Normal ctermbg=255 ctermfg=233 cterm=NONE guibg=#ffffff guifg=#000000 gui=NONE
 
     set background=light
 
     hi NonText ctermbg=NONE ctermfg=253 cterm=NONE guibg=NONE guifg=#dadada gui=NONE
     hi Comment ctermbg=NONE ctermfg=246 cterm=NONE guibg=NONE guifg=#949494 gui=NONE
     hi Conceal ctermbg=NONE ctermfg=242 cterm=NONE guibg=NONE guifg=#6c6c6c gui=NONE
-    hi Constant ctermbg=NONE ctermfg=233 cterm=NONE guibg=NONE guifg=#121212 gui=NONE
-    hi String ctermbg=NONE ctermfg=134 cterm=NONE guibg=NONE guifg=#55b4d4 gui=NONE
-    hi Identifier ctermbg=NONE ctermfg=233 cterm=NONE guibg=NONE guifg=#121212 gui=NONE
+    hi Constant ctermbg=NONE ctermfg=233 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
+    hi String ctermbg=NONE ctermfg=134 cterm=NONE guibg=NONE guifg=#00bbff gui=NONE
+    hi Identifier ctermbg=NONE ctermfg=233 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
     hi Statement ctermbg=NONE ctermfg=236 cterm=NONE guibg=NONE guifg=#303030 gui=NONE
-    hi Operator ctermbg=NONE ctermfg=233 cterm=NONE guibg=NONE guifg=#121212 gui=NONE
+    hi Operator ctermbg=NONE ctermfg=233 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
     hi PreProc ctermbg=NONE ctermfg=236 cterm=NONE guibg=NONE guifg=#303030 gui=NONE
     hi Type ctermbg=NONE ctermfg=236 cterm=NONE guibg=NONE guifg=#303030 gui=NONE
     hi Special ctermbg=NONE ctermfg=242 cterm=NONE guibg=NONE guifg=#6c6c6c gui=NONE
@@ -32,17 +32,17 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Warning ctermbg=NONE ctermfg=166 cterm=NONE guibg=NONE guifg=#d75f00 gui=NONE
     hi ModeMsg ctermbg=NONE ctermfg=242 cterm=NONE guibg=NONE guifg=#6c6c6c gui=NONE
     hi Todo ctermbg=NONE ctermfg=203 cterm=bold guibg=NONE guifg=#d75f5f gui=bold
-    hi Underlined ctermbg=NONE ctermfg=233 cterm=underline guibg=NONE guifg=#121212 gui=underline
+    hi Underlined ctermbg=NONE ctermfg=233 cterm=underline guibg=NONE guifg=#000000 gui=underline
     hi StatusLine ctermbg=254 ctermfg=134 cterm=bold guibg=#e4e4e4 guifg=#af5fd7 gui=bold
     hi StatusLineNC ctermbg=255 ctermfg=242 cterm=NONE guibg=#eeeeee guifg=#6c6c6c gui=NONE
     hi TabLine ctermbg=253 ctermfg=242 cterm=NONE guibg=#dadada guifg=#6c6c6c gui=NONE
     hi TabLineSel ctermbg=255 ctermfg=134 cterm=bold guibg=#eeeeee guifg=#af5fd7 gui=bold
     hi WildMenu ctermbg=203 ctermfg=255 cterm=NONE guibg=#d75f5f guifg=#ffffff gui=NONE
     hi VertSplit ctermbg=255 ctermfg=255 cterm=NONE guibg=#eeeeee guifg=#eeeeee gui=NONE
-    hi Title ctermbg=NONE ctermfg=233 cterm=bold guibg=NONE guifg=#121212 gui=bold
+    hi Title ctermbg=NONE ctermfg=233 cterm=bold guibg=NONE guifg=#000000 gui=bold
     hi LineNr ctermbg=NONE ctermfg=246 cterm=NONE guibg=NONE guifg=#949494 gui=NONE
     hi CursorLineNr ctermbg=255 ctermfg=134 cterm=NONE guibg=#eeeeee guifg=#af5fd7 gui=NONE
-    hi Cursor ctermbg=134 ctermfg=233 cterm=NONE guibg=#af5fd7 guifg=#121212 gui=NONE
+    hi Cursor ctermbg=134 ctermfg=233 cterm=NONE guibg=#af5fd7 guifg=#000000 gui=NONE
     hi CursorLine ctermbg=255 ctermfg=NONE cterm=NONE guibg=#eeeeee guifg=NONE gui=NONE
     hi SignColumn ctermbg=NONE ctermfg=242 cterm=NONE guibg=NONE guifg=#6c6c6c gui=NONE
     hi Visual ctermbg=134 ctermfg=fg cterm=NONE guibg=#c1ddff guifg=fg gui=NONE
@@ -54,8 +54,8 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Folded ctermbg=253 ctermfg=242 cterm=NONE guibg=#dadada guifg=#6c6c6c gui=NONE
     hi FoldColumn ctermbg=NONE ctermfg=166 cterm=NONE guibg=NONE guifg=#fffa00 gui=NONE
     hi SpecialKey ctermbg=NONE ctermfg=242 cterm=NONE guibg=NONE guifg=#6c6c6c gui=NONE
-    hi IncSearch ctermbg=166 ctermfg=233 cterm=NONE guibg=#fffa00 guifg=#121212 gui=NONE
-    hi Search ctermbg=166 ctermfg=233 cterm=NONE guibg=#fffa00 guifg=#121212 gui=NONE
+    hi IncSearch ctermbg=166 ctermfg=233 cterm=NONE guibg=#fffa00 guifg=#000000 gui=NONE
+    hi Search ctermbg=166 ctermfg=233 cterm=NONE guibg=#fffa00 guifg=#000000 gui=NONE
     hi Directory ctermbg=NONE ctermfg=28 cterm=NONE guibg=NONE guifg=#0225c7 gui=NONE
     hi MatchParen ctermbg=NONE ctermfg=203 cterm=bold guibg=NONE guifg=#d75f5f gui=bold
     hi SpellBad ctermbg=NONE ctermfg=124 cterm=underline guibg=NONE guifg=#af0000 gui=underline
