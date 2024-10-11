@@ -19,7 +19,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 
     hi NonText ctermbg=NONE ctermfg=253 cterm=NONE guibg=NONE guifg=#888888 gui=NONE
     hi Comment ctermbg=NONE ctermfg=246 cterm=NONE guibg=NONE guifg=#949494 gui=NONE
-    hi Conceal ctermbg=NONE ctermfg=242 cterm=NONE guibg=NONE guifg=#6c6c6c gui=NONE
+    hi Conceal ctermbg=NONE ctermfg=242 cterm=NONE guibg=NONE guifg=#999999 gui=NONE
     hi Constant ctermbg=NONE ctermfg=233 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
     hi String ctermbg=NONE ctermfg=134 cterm=NONE guibg=NONE guifg=#0000ff gui=NONE
     hi Identifier ctermbg=NONE ctermfg=233 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
@@ -27,15 +27,15 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Operator ctermbg=NONE ctermfg=233 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
     hi PreProc ctermbg=NONE ctermfg=236 cterm=NONE guibg=NONE guifg=#303030 gui=NONE
     hi Type ctermbg=NONE ctermfg=236 cterm=NONE guibg=NONE guifg=#303030 gui=NONE
-    hi Special ctermbg=NONE ctermfg=242 cterm=NONE guibg=NONE guifg=#6c6c6c gui=NONE
+    hi Special ctermbg=NONE ctermfg=242 cterm=NONE guibg=NONE guifg=#999999 gui=NONE
     hi Error ctermbg=NONE ctermfg=124 cterm=NONE guibg=NONE guifg=#af0000 gui=NONE
     hi Warning ctermbg=NONE ctermfg=166 cterm=NONE guibg=NONE guifg=#d75f00 gui=NONE
-    hi ModeMsg ctermbg=NONE ctermfg=242 cterm=NONE guibg=NONE guifg=#6c6c6c gui=NONE
+    hi ModeMsg ctermbg=NONE ctermfg=242 cterm=NONE guibg=NONE guifg=#999999 gui=NONE
     hi Todo ctermbg=NONE ctermfg=203 cterm=bold guibg=NONE guifg=#d75f5f gui=bold
     hi Underlined ctermbg=NONE ctermfg=233 cterm=underline guibg=NONE guifg=#000000 gui=underline
     hi StatusLine ctermbg=254 ctermfg=134 cterm=bold guibg=#e4e4e4 guifg=#af5fd7 gui=bold
-    hi StatusLineNC ctermbg=255 ctermfg=242 cterm=NONE guibg=#eeeeee guifg=#6c6c6c gui=NONE
-    hi TabLine ctermbg=253 ctermfg=242 cterm=NONE guibg=#888888 guifg=#6c6c6c gui=NONE
+    hi StatusLineNC ctermbg=255 ctermfg=242 cterm=NONE guibg=#eeeeee guifg=#999999 gui=NONE
+    hi TabLine ctermbg=253 ctermfg=242 cterm=NONE guibg=#888888 guifg=#999999 gui=NONE
     hi TabLineSel ctermbg=255 ctermfg=134 cterm=bold guibg=#eeeeee guifg=#af5fd7 gui=bold
     hi WildMenu ctermbg=203 ctermfg=255 cterm=NONE guibg=#d75f5f guifg=#ffffff gui=NONE
     hi VertSplit ctermbg=255 ctermfg=255 cterm=NONE guibg=#eeeeee guifg=#eeeeee gui=NONE
@@ -44,16 +44,16 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi CursorLineNr ctermbg=255 ctermfg=134 cterm=NONE guibg=#eeeeee guifg=#af5fd7 gui=NONE
     hi Cursor ctermbg=134 ctermfg=233 cterm=NONE guibg=#af5fd7 guifg=#000000 gui=NONE
     hi CursorLine ctermbg=255 ctermfg=NONE cterm=NONE guibg=#eeeeee guifg=NONE gui=NONE
-    hi SignColumn ctermbg=NONE ctermfg=242 cterm=NONE guibg=NONE guifg=#6c6c6c gui=NONE
+    hi SignColumn ctermbg=NONE ctermfg=242 cterm=NONE guibg=NONE guifg=#999999 gui=NONE
     hi Visual ctermbg=134 ctermfg=fg cterm=NONE guibg=#c1ddff guifg=fg gui=NONE
     hi VisualNOS ctermbg=134 ctermfg=fg cterm=NONE guibg=#c1ddff guifg=fg gui=NONE
-    hi Pmenu ctermbg=255 ctermfg=242 cterm=NONE guibg=#eeeeee guifg=#6c6c6c gui=NONE
+    hi Pmenu ctermbg=255 ctermfg=242 cterm=NONE guibg=#eeeeee guifg=#999999 gui=NONE
     hi PmenuSbar ctermbg=254 ctermfg=NONE cterm=NONE guibg=#e4e4e4 guifg=NONE gui=NONE
     hi PmenuSel ctermbg=254 ctermfg=134 cterm=bold guibg=#e4e4e4 guifg=#af5fd7 gui=bold
     hi PmenuThumb ctermbg=203 ctermfg=NONE cterm=NONE guibg=#d75f5f guifg=NONE gui=NONE
-    hi Folded ctermbg=253 ctermfg=242 cterm=NONE guibg=#888888 guifg=#6c6c6c gui=NONE
+    hi Folded ctermbg=253 ctermfg=242 cterm=NONE guibg=#888888 guifg=#999999 gui=NONE
     hi FoldColumn ctermbg=NONE ctermfg=166 cterm=NONE guibg=NONE guifg=#fffa00 gui=NONE
-    hi SpecialKey ctermbg=NONE ctermfg=242 cterm=NONE guibg=NONE guifg=#6c6c6c gui=NONE
+    hi SpecialKey ctermbg=NONE ctermfg=242 cterm=NONE guibg=NONE guifg=#999999 gui=NONE
     hi IncSearch ctermbg=166 ctermfg=233 cterm=NONE guibg=#fffa00 guifg=#000000 gui=NONE
     hi Search ctermbg=166 ctermfg=233 cterm=NONE guibg=#fffa00 guifg=#000000 gui=NONE
     hi Directory ctermbg=NONE ctermfg=28 cterm=NONE guibg=NONE guifg=#0225c7 gui=NONE
