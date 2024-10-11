@@ -21,7 +21,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Comment ctermbg=NONE ctermfg=246 cterm=NONE guibg=NONE guifg=#949494 gui=NONE
     hi Conceal ctermbg=NONE ctermfg=242 cterm=NONE guibg=NONE guifg=#6c6c6c gui=NONE
     hi Constant ctermbg=NONE ctermfg=233 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
-    hi String ctermbg=NONE ctermfg=134 cterm=NONE guibg=NONE guifg=#00bbff gui=NONE
+    hi String ctermbg=NONE ctermfg=134 cterm=NONE guibg=NONE guifg=#0000ff gui=NONE
     hi Identifier ctermbg=NONE ctermfg=233 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
     hi Statement ctermbg=NONE ctermfg=236 cterm=NONE guibg=NONE guifg=#303030 gui=NONE
     hi Operator ctermbg=NONE ctermfg=233 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
